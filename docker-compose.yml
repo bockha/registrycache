@@ -4,7 +4,7 @@ version: '2'
 # Notice that a config.yml file is mapped into the container, save that next to this docker-compose.yml
 services:
     hub-mirror:
-        image: registry:2
+        image: bockha/registrycache:latest
         restart: unless-stopped
         ports:
             - 15000:5000
